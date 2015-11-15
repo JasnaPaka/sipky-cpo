@@ -7,3 +7,9 @@ Version: 1.0
 */
 
 @import url("/wp-content/themes/vpp-child-krizkyavetrelci/style-shared.css");
+
+#obsah-container {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+}
