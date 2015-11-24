@@ -17,8 +17,7 @@
       </div>
     </div>
     <div id="footer-bottom">
-    	Projekt Křížky a vetřelci vznikl na základě podnětu Aleše Hejny
-       / v rámci projektu Plzeň - Evropské hlavní město kultury 2015
+
     </div>     
   </div>
 
@@ -28,7 +27,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-51854113-1', 'auto');
+  ga('create', 'UA-70631859-1', 'auto');
   ga('send', 'pageview');
 
 </script>
