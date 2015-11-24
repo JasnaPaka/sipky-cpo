@@ -6,10 +6,33 @@ Template: vpp
 Version: 1.0
 */
 
-@import url("/wp-content/themes/vpp-child-krizkyavetrelci/style-shared.css");
+@import url("/wp-content/themes/vpp-child-sipky/style-shared.css");
 
 #obsah-container {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
+}
+
+#page.katalog .post .padding {
+    height: 50px;
+}
+
+#page.titulni .contentheight {
+    min-height: 1100px;
+}
+
+#page.index #actualprojects {
+    height: 1100px;
+}
+
+.strankovani-polozka-akt, .buttonGreen {
+    background-color: #80011F;
+}
+
+#page.index.podnet .topMenu h1, 
+#obsah-perex,
+.content a,
+#actualprojects a h3{
+    color: #80011F;
 }

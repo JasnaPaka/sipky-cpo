@@ -21,6 +21,10 @@ function getObjectPluralStr($count) {
     return $KV["dilo"][3];
 }
 
+function getCountRandomObjects() {
+    return 2;
+}
+
 // řetězce
 
 $KV["projekt_info"] = 'Projekt Křížky a vetřelci mapuje drobné umění na území města Plzeň. Zaměřuje se jak na umění z doby normalizace,
