@@ -1,4 +1,4 @@
-<h2>Dokumentární film Stopovaná</h2>
+<h2>Krátký dokumentární film Stopovaná</h2>
 
 <p id="titulka-mapa">Krátký dokument stopuje šipky namalované na starých fasádách plzeňských domů. 
     Dokument odpovídá krátkou výpovědí několika kolemjdoucích na otázky po jejich původu a účelu. 
