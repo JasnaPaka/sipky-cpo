@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php 
+    get_header(); 
+    
+    $KV_SETTINGS = kv_settings();
+?>
 
 <div id="mappage">
 
@@ -24,16 +28,16 @@
 
 <div id="map-canvas"></div>
 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC9G-I3g4tWPbXK-v_Ws_1_dY4V8w6Eew&amp;sensor=false"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<?php print ($KV_SETTINGS["gm_key"]) ?>&amp;sensor=false"></script>
 
 <script type="text/javascript">
 	var map;
 	var infowindow;
 	
 	var mapOptions = {
-		center: new google.maps.LatLng(49.748398, 13.377652),
+		center: new google.maps.LatLng(<?php print ($KV_SETTINGS["gm_lat"]) ?>, <?php print ($KV_SETTINGS["gm_lng"]) ?>),
 		mapTypeId: google.maps.MapTypeId.SATELLITE,
-		zoom: 13
+		zoom: <?php print ($KV_SETTINGS["gm_zoom"]) ?>
 	};
 	
     var bodyVMape = [
@@ -60,7 +64,7 @@
 				document.getElementById(categoryId).setAttribute("data-checked", "");
 	    	}
 		
-			if (checkAll && markers[i].minZoom <= zoom) {
+			if (checkAll) {
 				markers[i].setMap(map);
 			} else {
 				markers[i].setMap(null);
@@ -87,7 +91,7 @@
 		
   		for (i=0; i<markers.length; i++) {
   			var checked = categoryIsChecked(markers[i].category);
-			if (checked && markers[i].minZoom <= zoom && !bodyVMape[i][9]) {
+			if (checked && !bodyVMape[i][9]) {
 				markers[i].setMap(map);
 			} else {
 				markers[i].setMap(null);
@@ -118,7 +122,6 @@
 			    title: bodyVMape[i][5]
 			});
 			marker.category = bodyVMape[i][3];
-			marker.minZoom = bodyVMape[i][8];
 			
 			google.maps.event.addListener(marker, 'click', (function(marker, i) {
 	            return function() {
@@ -178,7 +181,7 @@
 		
 		for (i=0; i<markers.length; i++) {
 			if (markers[i].category == id) {
-				if (checked && markers[i].minZoom <= zoom) {
+				if (checked) {
 					markers[i].setMap(map);
 				} else {
 					markers[i].setMap(null);

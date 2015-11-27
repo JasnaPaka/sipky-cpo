@@ -99,6 +99,7 @@
 	
 	<div class="padding">
 		<h3><a href="/katalog/dilo/<?php printf($objekt->id) ?>/" title="<?php print ($KV["zobrazeni_informaci"]) ?>"><?php printf($objekt->nazev) ?></a></h3>
+		<?php include "page-katalog-dilo-grid.php" ?>
 	</div>
 </div>
 
@@ -134,6 +135,9 @@
 
                     <p><a href="/katalog/kategorie/<?php printf ($objekt->kategorie)?>/" 
                     	title="Zobrazí seznam děl v kategorii"><?php printf ($objekt->katnazev)?></a></p>
+                    
+                    <?php include "page-katalog-dilo-list.php" ?>
+                   
 
                   </div>
 
@@ -168,7 +172,7 @@
 		$category = $oc->getCurrentCategory();
 		if ($category != null) {
 			$subcat = "kategorie/".$category->id."/";	
-		}
+		}				
 		
 		if ($countPages > 0) {
 			// První
