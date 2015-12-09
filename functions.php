@@ -47,5 +47,19 @@ $KV["dila_se_stitkem"] = "Počet děl se štítkem";
 $KV["zobrazeni_informaci"] = "Zobrazení informací o díle";
 $KV["zadne_dilo"] = "V katalogu není žádná šipka.";
 
+$KV["pridat_dilo"] = "Přidat šipku";
+$KV["pridat_dilo_info1"] = "Děkujeme za váš zájem o projekt Šipky CPO Plzeň. Za každou nově přidanou šipku do mapy budeme rádi. Pro přidání můžete použít formulář níže.";
+$KV["pridat_dilo_info2"] = "Budeme rádi za každou novou informaci či fotografii. U fotografií prosím respektujte autorský zákon a přidávejte jen fotografie, které jsou 
+vaše vlastní či ke kterým vlastníte autorská práva. Pokud nebude domluveno jinak, budou fotografie na webu k dispozici pod
+volnou licencí <a href=\"http://creativecommons.org/licenses/by-sa/4.0/\">Creative Commons Attribution-ShareAlike 4.0</a>.";
+$KV["pridat_dilo_nazev"] = "Název šipky:";
+$KV["pridat_dilo_informace"] = "Informace o šipce:";
+$KV["pridat_dilo_informace_det"] = "Volitelně vložte libovolné informace o šipce.";
+$KV["pridat_dilo_informace_fot"] = "Volitelně vložte fotografie šipky.";
+$KV["pridat_dilo_mapa"] = "Klepněte do mapy, kde se šipka nachází.";
+$KV["pridat_dilo_submit"] = "Přidat šipku";
+$KV["pridat_dilo_o_dile"] = "O šipce";
+
+
 
 include "functions-strings.php";

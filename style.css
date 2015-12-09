@@ -26,14 +26,18 @@ Version: 1.0
     height: 1100px;
 }
 
-.strankovani-polozka-akt, .buttonGreen {
+.strankovani-polozka-akt, .buttonGreen,
+.pridat-dilo .button.orange,
+.pridat-dilo .updated{
     background-color: #80011F;
 }
 
 #page.index.podnet .topMenu h1, 
 #obsah-perex,
 .content a,
-#actualprojects a h3{
+#actualprojects a h3, 
+.pridat-dilo p a,
+#page form.rows h3 {
     color: #80011F;
 }
 

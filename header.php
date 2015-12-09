@@ -85,7 +85,7 @@
             <div class="separator"></div>
   
             <div id="socials">
-              <a id="social_rss" href="<?php printf('%s/feed', get_bloginfo('url')); ?>"></a><a id="social_fb" target="_blank" href="https://www.facebook.com/groups/krizkyavetrelci/"></a><a class="showpopup" id="newsletter" href="#"></a>
+              <a id="social_rss" href="<?php printf('%s/feed', get_bloginfo('url')); ?>"></a><a id="social_fb" target="_blank" href="https://www.facebook.com/groups/1534719250173094/"></a><a class="showpopup" id="newsletter" href="#"></a>
 
               <div id="newsletterpopup" class="menupopup">
                <?php
