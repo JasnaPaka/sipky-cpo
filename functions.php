@@ -28,12 +28,7 @@ function getCountRandomObjects() {
 // řetězce
 
 $KV["projekt_nazev"] = "Šipky CPO Plzeň";
-$KV["projekt_info"] = 'Projekt Křížky a vetřelci mapuje drobné umění na území města Plzeň. Zaměřuje se jak na umění z doby normalizace,
-			tak na sakrální památky jako jsou křížky či kapličky. Bez povšimnutí však nezůstávají ani pomníky a pamětní desky.
-			Křížky a vetřelci jsou otevřeným projektem, do kterého se může zapojit každý. Víte o díle, které nám chybí v
-			katalogu? Nebo o něm něco víte? <a href="mailto:krizkyavetrelci@email.cz">Napište nám</a> nebo se 
-			<a href="https://www.facebook.com/groups/krizkyavetrelci/">zapojte na Facebooku</a>.';
-
+$KV["projekt_info"] = 'Lidé chodí denně ulicemi. Míjí nespočet starých fasád. Často si starých šedých fasád ani nevšimnou nebo si neuvědomí, že by na nich bylo něco, co zachraňovalo životy. Stopujeme šipky z druhé světové války, jejichž sledování bylo pro lidi otázkou života a smrti.';
 $KV["nahodne_dilo"] = "Náhodná díla";
 $KV["posledni_pridane"] = "Poslední přidané";
 $KV["dilo"] = array ("děl", "dílo", "díla", "děl");
