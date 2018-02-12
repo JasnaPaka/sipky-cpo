@@ -1,7 +1,10 @@
 <?php 
 	get_header();
 	$objekt = kv_object_info();
-	$uploadDir = wp_upload_dir();
+    $uploadDir = wp_upload_dir();
+    if (is_ssl()) {
+        $uploadDir = str_replace("http://", "https://", $uploadDir);
+    }
 	$oc = kv_object_controller();
 	
 	$kategorie = $objekt->kategorie;

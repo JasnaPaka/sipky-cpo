@@ -1,6 +1,9 @@
 <?php 
 	get_header();
-	$uploadDir = wp_upload_dir();
+    $uploadDir = wp_upload_dir();
+    if (is_ssl()) {
+        $uploadDir = str_replace("http://", "https://", $uploadDir);
+    }
 	$autori = kv_autor_seznam();
 	$ac = kv_autor_controller();
 ?>

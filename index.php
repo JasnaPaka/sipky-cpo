@@ -1,7 +1,10 @@
 <?php 
-    get_header(); 
+    get_header();
 
     $uploadDir = wp_upload_dir();
+    if (is_ssl()) {
+        $uploadDir = str_replace("http://", "https://", $uploadDir);
+    }
     $PAGE["pocet_del"] = kv_ObjektPocet();
     $PAGE["pocet_kategorii"] = kv_category_count();
 ?>
