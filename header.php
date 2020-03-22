@@ -165,7 +165,10 @@
             $color = get_option('project_color', '#000');              
           
             $projects_items .= sprintf('<li><a href="%s" style="color: %s">%s</a></li>', get_bloginfo('siteurl'), $color, get_bloginfo('name'));
-            $maps_items .= sprintf('<li><a href="%s/mapa" style="color: %s">%s</a></li>', get_bloginfo('siteurl'), $color, get_bloginfo('name'));
+            
+            if (get_page_by_path('mapa')) {
+              $maps_items .= sprintf('<li><a href="%s/mapa" style="color: %s">%s</a></li>', get_bloginfo('siteurl'), $color, get_bloginfo('name'));
+            }
           
             restore_current_blog();
           }
@@ -202,7 +205,7 @@
           <div id="header_project_right">
             <p><?php echo get_option('project_description') ?></p>
           </div>
-                           
+          <div class="clear"></div>                 
         </div>
         <?php wp_nav_menu( array('menu' => 'main_menu', 'container' => '', 'menu_id' => 'project-menu', 'depth' => 1)); ?>
       <?php } else { ?>

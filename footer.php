@@ -3,14 +3,7 @@
     <div id="footer-content">
       <div class="inner">
       
-          Partneři
-        
-          <div id="partners">
-            <a href="http://www.plzen2015.cz" target="_blank"><img src="<?php bloginfo('template_url') ?>/i/partners/plzen2015.png" alt="Partner"></a>
-            <a href="http://www.mkcr.cz" target="_blank"><img src="<?php bloginfo('template_url') ?>/i/partners/ministerstvokultury.png" alt="Partner"></a>
-            <a href="http://www.plzensky-kraj.cz" target="_blank"><img src="<?php bloginfo('template_url') ?>/i/partners/plzenskykraj.png" alt="Partner"></a>
-            <a href="http://ec.europa.eu/culture" target="_blank"><img src="<?php bloginfo('template_url') ?>/i/partners/eu.png" alt="Partner" class="last"></a>
-          </div>
+          <?php include get_theme_root()."/vpp/footer-sponsors.php" ?>
     
         <div class="clear"></div>
         
